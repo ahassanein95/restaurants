@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      margin: 0;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .btn {
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 8px;
+      width: 200px;
+    }
+    
+    .btn:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .btn:active {
+      transform: translateY(0);
+    }
+    
+    .status {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      min-height: 20px;
+    }
+    
+    .loading {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .success {
+      background: rgba(76, 175, 80, 0.3);
+      border: 1px solid rgba(76, 175, 80, 0.5);
+    }
+    
+    .error {
+      background: rgba(244, 67, 54, 0.3);
+      border: 1px solid rgba(244, 67, 54, 0.5);
+    }
+    
+    .settings {
+      margin-top: 15px;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+    }
+    
+    .setting-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+    }
+    
+    .toggle {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .toggle.active {
+      background: rgba(76, 175, 80, 0.8);
+    }
+    
+    .toggle::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      background: white;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+    
+    .toggle.active::after {
+      transform: translateX(20px);
+    }
+    
+    .profile-section {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+    }
+    
+    .profile-section h3 {
+      margin: 0 0 15px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .profile-form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    
+    .form-group label {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+    }
+    
+    .form-group input {
+      padding: 6px 8px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 4px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      font-size: 11px;
+    }
+    
+    .form-group input::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.15);
+    }
+    
+    #saveProfile {
+      margin-top: 10px;
+      width: 100%;
+      padding: 8px;
+      font-size: 12px;
+    }
+    
+    .status.error {
+      color: #e74c3c;
+    }
+    
+    .status.info {
+      color: #3498db;
+    }
+    
+    .status.success {
+      color: #27ae60;
+    }
+    
+    .ai-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    
+    .ai-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #95a5a6;
+    }
+    
+    .ai-dot.active {
+      background-color: #27ae60;
+    }
+    
+    .ai-dot.error {
+      background-color: #e74c3c;
+    }
+    
+    .usage-stats {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 8px;
+    }
+    
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    
+    .stat-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .stat-label {
+      font-size: 12px;
+      color: #6c757d;
+    }
+    
+    .stat-value {
+      font-size: 12px;
+      font-weight: 600;
+      color: #495057;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI Form Filler</h1>
+    
+    <div class="controls">
+      <button id="fillForm" class="btn btn-primary">Fill Form</button>
+      <button id="analyzeForm" class="btn btn-secondary">Analyze Form</button>
+      <div class="ai-indicator" id="aiIndicator">
+        <span class="ai-dot"></span>
+        <span class="ai-text">AI: Not configured</span>
+      </div>
+    </div>
+    
+    <button id="checkIframes" class="btn">Check for Embedded Forms</button>
+    
+    <div id="status" class="status"></div>
+    
+    <div class="settings">
+      <div class="setting-item">
+        <span>Auto-fill on page load</span>
+        <div id="autoFillToggle" class="toggle"></div>
+      </div>
+      <div class="setting-item">
+        <span>Smart suggestions</span>
+        <div id="smartToggle" class="toggle active"></div>
+      </div>
+    </div>
+    
+    <div class="profile-section">
+      <h3>🤖 AI Profile</h3>
+      <div class="profile-form">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="firstName" placeholder="Enter your first name">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="lastName" placeholder="Enter your last name">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" id="address" placeholder="Enter your address">
+        </div>
+        <div class="form-group">
+          <label>City</label>
+          <input type="text" id="city" placeholder="Enter your city">
+        </div>
+        <div class="form-group">
+          <label>State</label>
+          <input type="text" id="state" placeholder="Enter your state">
+        </div>
+        <div class="form-group">
+          <label>Zip Code</label>
+          <input type="text" id="zipCode" placeholder="Enter your zip code">
+        </div>
+        <div class="form-group">
+          <label>Country</label>
+          <input type="text" id="country" placeholder="Enter your country">
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" id="company" placeholder="Enter your company">
+        </div>
+        <div class="form-group">
+          <label>Job Title</label>
+          <input type="text" id="jobTitle" placeholder="Enter your job title">
+        </div>
+        <div class="form-group">
+          <label>Website</label>
+          <input type="url" id="website" placeholder="Enter your website">
+        </div>
+        <button id="saveProfile" class="btn">Save Profile</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Settings</h3>
+      <div class="form-group">
+        <label class="toggle-label">
+          <input type="checkbox" id="autoFill" />
+          <span class="toggle-slider"></span>
+          Auto-fill forms on page load
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="toggle-label">
+          <input type="checkbox" id="smartSuggestions" />
+          <span class="toggle-slider"></span>
+          Smart suggestions
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>AI Usage Statistics</h3>
+      <div id="usageStats" class="usage-stats">
+        <div class="stat-item">
+          <span class="stat-label">Today's AI Calls:</span>
+          <span id="dailyCalls" class="stat-value">-</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Total AI Calls:</span>
+          <span id="totalCalls" class="stat-value">-</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Success Rate:</span>
+          <span id="successRate" class="stat-value">-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
