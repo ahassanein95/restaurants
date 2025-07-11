@@ -117,6 +117,10 @@ class AIService {
       return null;
     }
 
+    // Debug: Log the profile data being sent to AI
+    console.log('🧠 AI Service: Profile data being sent to AI:', userProfile);
+    console.log('🧠 AI Service: Field being analyzed:', fieldInfo);
+
     // Check rate limits
     const rateLimitCheck = this.checkRateLimit();
     if (!rateLimitCheck.allowed) {
@@ -124,13 +128,15 @@ class AIService {
       return null;
     }
 
-    console.log(`🚀 Making OpenAI API call for field: ${fieldInfo.name}`);
+    // Generate unique request ID to prevent caching
+    const requestId = `field_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    console.log(`🚀 Making OpenAI API call for field: ${fieldInfo.name} (Request ID: ${requestId})`);
 
     try {
-      const prompt = this.buildFieldAnalysisPrompt(fieldInfo, userProfile, pageContext);
+      const prompt = this.buildFieldAnalysisPrompt(fieldInfo, userProfile, pageContext, requestId);
       const response = await this.callOpenAI(prompt);
       this.updateUsageStats(true);
-      console.log(`✅ OpenAI API call successful for field: ${fieldInfo.name}`);
+      console.log(`✅ OpenAI API call successful for field: ${fieldInfo.name} (Request ID: ${requestId})`);
       return this.parseAIResponse(response);
     } catch (error) {
       this.updateUsageStats(false);
@@ -149,8 +155,14 @@ class AIService {
     }
   }
 
-  buildFieldAnalysisPrompt(fieldInfo, userProfile, pageContext) {
+  buildFieldAnalysisPrompt(fieldInfo, userProfile, pageContext, requestId) {
+    // Build comprehensive profile information including skills and experience
+    const profileInfo = this.buildComprehensiveProfileInfo(userProfile);
+    
     return `You are an AI assistant that helps fill web forms intelligently. Analyze the following form field and provide the most appropriate value.
+
+REQUEST ID: ${requestId}
+IMPORTANT: Each field is unique and should be analyzed independently, even if field names or labels seem similar.
 
 FIELD INFORMATION:
 - Type: ${fieldInfo.type}
@@ -160,18 +172,7 @@ FIELD INFORMATION:
 - Required: ${fieldInfo.required || false}
 
 USER PROFILE:
-- First Name: ${userProfile.firstName}
-- Last Name: ${userProfile.lastName}
-- Email: ${userProfile.email}
-- Phone: ${userProfile.phone}
-- Address: ${userProfile.address}
-- City: ${userProfile.city}
-- State: ${userProfile.state}
-- Zip Code: ${userProfile.zipCode}
-- Country: ${userProfile.country}
-- Company: ${userProfile.company}
-- Job Title: ${userProfile.jobTitle}
-- Website: ${userProfile.website}
+${profileInfo}
 
 PAGE CONTEXT:
 - URL: ${pageContext.url || 'Unknown'}
@@ -180,11 +181,16 @@ PAGE CONTEXT:
 
 INSTRUCTIONS:
 1. Analyze the field context and determine what information is being requested
-2. Choose the most appropriate value from the user profile
-3. If no profile value matches, suggest a reasonable default
-4. For select dropdowns, suggest the best option
-5. For text areas, provide contextually appropriate content
-6. Return only the value, no explanations
+2. PRIORITIZE using the user's actual profile data over generic defaults
+3. For skill-related questions, use the user's specific skills and years of experience
+4. For experience questions, use the user's actual work history
+5. For education questions, use the user's actual education background
+6. If the field asks for years of experience with a specific technology, use the user's skill data
+7. If no profile value matches, suggest a reasonable default
+8. For select dropdowns, suggest the best option based on user's profile
+9. For text areas, provide contextually appropriate content based on user's background
+10. Return only the value, no explanations
+11. CRITICAL: Each field is unique - do not reuse values from previous fields
 
 RESPONSE FORMAT:
 {
@@ -196,7 +202,98 @@ RESPONSE FORMAT:
 Example responses:
 - For email field: {"value": "john.doe@example.com", "confidence": 0.99, "reasoning": "Direct email field match"}
 - For name field: {"value": "John Doe", "confidence": 0.95, "reasoning": "Full name requested"}
+- For Node.js experience: {"value": "3", "confidence": 0.95, "reasoning": "User has 3 years Node.js experience in profile"}
 - For comment field: {"value": "Thank you for your service. I'm interested in learning more about your offerings.", "confidence": 0.8, "reasoning": "Professional comment appropriate for contact form"}`;
+  }
+
+  buildComprehensiveProfileInfo(userProfile) {
+    let profileInfo = `- First Name: ${userProfile.firstName || 'Not provided'}
+- Last Name: ${userProfile.lastName || 'Not provided'}
+- Email: ${userProfile.email || 'Not provided'}
+- Phone: ${userProfile.phone || 'Not provided'}
+- Address: ${userProfile.address || 'Not provided'}
+- City: ${userProfile.city || 'Not provided'}
+- State: ${userProfile.state || 'Not provided'}
+- Zip Code: ${userProfile.zipCode || 'Not provided'}
+- Country: ${userProfile.country || 'Not provided'}
+- Company: ${userProfile.company || 'Not provided'}
+- Job Title: ${userProfile.jobTitle || 'Not provided'}
+- Industry: ${userProfile.industry || 'Not provided'}
+- Years of Experience: ${userProfile.yearsOfExperience || 'Not provided'}
+- Website: ${userProfile.website || 'Not provided'}
+- LinkedIn: ${userProfile.linkedin || 'Not provided'}
+- GitHub: ${userProfile.github || 'Not provided'}
+- Professional Summary: ${userProfile.summary || 'Not provided'}
+- Bio: ${userProfile.bio || 'Not provided'}`;
+
+    // Extract skills from experience descriptions
+    const extractedSkills = new Set();
+    if (userProfile.experience && userProfile.experience.length > 0) {
+      profileInfo += `\n\nWORK EXPERIENCE:`;
+      userProfile.experience.forEach((exp, index) => {
+        profileInfo += `\n- ${index + 1}. ${exp.jobTitle || 'Position'} at ${exp.company || 'Company'} (${exp.startDate || 'Start'} - ${exp.endDate || 'Present'})`;
+        if (exp.description) {
+          profileInfo += `\n  Description: ${exp.description}`;
+          
+          // Extract potential skills from job descriptions
+          const description = exp.description.toLowerCase();
+          const skillKeywords = [
+            'javascript', 'js', 'node', 'node.js', 'react', 'angular', 'vue', 'python', 'java', 'c++', 'c#', 
+            'php', 'ruby', 'go', 'rust', 'swift', 'kotlin', 'typescript', 'html', 'css', 'sql', 'mongodb',
+            'mysql', 'postgresql', 'aws', 'azure', 'docker', 'kubernetes', 'git', 'linux', 'windows',
+            'mac', 'android', 'ios', 'wordpress', 'drupal', 'shopify', 'salesforce', 'tableau', 'powerbi',
+            'rest api', 'api', 'microservices', 'agile', 'scrum', 'devops', 'ci/cd', 'jenkins', 'jira',
+            'figma', 'sketch', 'adobe', 'photoshop', 'illustrator', 'excel', 'powerpoint', 'word'
+          ];
+          
+          skillKeywords.forEach(skill => {
+            if (description.includes(skill)) {
+              extractedSkills.add(skill);
+            }
+          });
+        }
+      });
+      
+      // Add extracted skills to the profile info
+      if (extractedSkills.size > 0) {
+        profileInfo += `\n\nEXTRACTED SKILLS FROM EXPERIENCE: ${Array.from(extractedSkills).join(', ')}`;
+      }
+    }
+
+    // Add skills information if available
+    if (userProfile.skills) {
+      profileInfo += `\n\nSKILLS & EXPERTISE:`;
+      
+      if (userProfile.skills.technical && userProfile.skills.technical.length > 0) {
+        profileInfo += `\n- Technical Skills: ${userProfile.skills.technical.join(', ')}`;
+      }
+      
+      if (userProfile.skills.languages && userProfile.skills.languages.length > 0) {
+        profileInfo += `\n- Languages: ${userProfile.skills.languages.join(', ')}`;
+      }
+      
+      if (userProfile.skills.tools && userProfile.skills.tools.length > 0) {
+        profileInfo += `\n- Tools & Technologies: ${userProfile.skills.tools.join(', ')}`;
+      }
+    }
+
+    // Add education information if available
+    if (userProfile.education && userProfile.education.length > 0) {
+      profileInfo += `\n\nEDUCATION:`;
+      userProfile.education.forEach((edu, index) => {
+        profileInfo += `\n- ${index + 1}. ${edu.degree || 'Degree'} in ${edu.fieldOfStudy || 'Field'} from ${edu.institution || 'Institution'} (${edu.graduationYear || 'Year'})`;
+        if (edu.description) {
+          profileInfo += `\n  Description: ${edu.description}`;
+        }
+      });
+    }
+
+    // Add resume text if available
+    if (userProfile.resumeText) {
+      profileInfo += `\n\nRESUME CONTENT: ${userProfile.resumeText.substring(0, 500)}${userProfile.resumeText.length > 500 ? '...' : ''}`;
+    }
+
+    return profileInfo;
   }
 
   async callOpenAI(prompt) {
@@ -304,6 +401,17 @@ Response format:
   getFallbackValue(fieldInfo, userProfile) {
     const { type, name, placeholder, label } = fieldInfo;
     
+    // Debug: Log the profile data being used in fallback
+    console.log('📝 Fallback: Using profile data:', userProfile);
+    console.log('📝 Fallback: Analyzing field:', fieldInfo);
+    
+    // Check for skill/technology experience questions
+    const skillMatch = this.matchSkillExperience(fieldInfo, userProfile);
+    if (skillMatch) {
+      console.log(`📝 Fallback: Found skill match: "${skillMatch}"`);
+      return skillMatch;
+    }
+    
     // Email fields
     if (type === 'email' || name.includes('email') || placeholder.includes('email') || label.includes('email')) {
       return userProfile.email;
@@ -395,6 +503,69 @@ Response format:
       default:
         return 'Sample value';
     }
+  }
+
+  // Helper method to match skill experience questions
+  matchSkillExperience(fieldInfo, userProfile) {
+    const { name, placeholder, label } = fieldInfo;
+    const fieldText = `${name} ${placeholder} ${label}`.toLowerCase();
+    
+    // Check if this is asking about years of experience with a technology
+    if (fieldText.includes('year') && (fieldText.includes('experience') || fieldText.includes('work'))) {
+      // Common technology keywords
+      const techKeywords = [
+        'javascript', 'js', 'node', 'node.js', 'react', 'angular', 'vue', 'python', 'java', 'c++', 'c#', 
+        'php', 'ruby', 'go', 'rust', 'swift', 'kotlin', 'typescript', 'html', 'css', 'sql', 'mongodb',
+        'mysql', 'postgresql', 'aws', 'azure', 'docker', 'kubernetes', 'git', 'linux', 'windows',
+        'mac', 'android', 'ios', 'wordpress', 'drupal', 'shopify', 'salesforce', 'tableau', 'powerbi',
+        'rest api', 'api', 'microservices', 'agile', 'scrum', 'devops', 'ci/cd', 'jenkins', 'jira'
+      ];
+      
+      for (const tech of techKeywords) {
+        if (fieldText.includes(tech)) {
+          // Check if user has this skill in their profile
+          let hasSkill = false;
+          
+          // Check skills arrays first
+          if (userProfile.skills) {
+            const allSkills = [
+              ...(userProfile.skills.technical || []),
+              ...(userProfile.skills.tools || []),
+              ...(userProfile.skills.languages || [])
+            ];
+            
+            hasSkill = allSkills.some(skill => 
+              skill.toLowerCase().includes(tech) || tech.includes(skill.toLowerCase())
+            );
+          }
+          
+          // If not found in skills, check experience descriptions
+          if (!hasSkill && userProfile.experience) {
+            hasSkill = userProfile.experience.some(exp => {
+              if (exp.description) {
+                return exp.description.toLowerCase().includes(tech);
+              }
+              return false;
+            });
+          }
+          
+          if (hasSkill) {
+            // Return a reasonable experience value based on user's overall experience
+            const baseExperience = parseInt(userProfile.yearsOfExperience) || 3;
+            const skillExperience = Math.max(1, Math.floor(baseExperience * 0.7));
+            console.log(`📝 Fallback: Found skill "${tech}" in experience, returning ${skillExperience} years`);
+            return skillExperience.toString();
+          }
+        }
+      }
+    }
+    
+    // Check for general experience questions
+    if (fieldText.includes('experience') && fieldText.includes('year')) {
+      return userProfile.yearsOfExperience || '3';
+    }
+    
+    return null;
   }
 
   async analyzeSelectOption(fieldInfo, options, userProfile, pageContext = {}) {

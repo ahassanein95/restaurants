@@ -1,360 +1,350 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <style>
-    body {
-      width: 300px;
-      padding: 20px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      margin: 0;
-    }
-    
-    .container {
-      text-align: center;
-    }
-    
-    h1 {
-      font-size: 18px;
-      margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    }
-    
-    .btn {
-      background: rgba(255,255,255,0.2);
-      border: 2px solid rgba(255,255,255,0.3);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      margin: 8px;
-      width: 200px;
-    }
-    
-    .btn:hover {
-      background: rgba(255,255,255,0.3);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    
-    .btn:active {
-      transform: translateY(0);
-    }
-    
-    .status {
-      margin-top: 15px;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 12px;
-      min-height: 20px;
-    }
-    
-    .loading {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    
-    .success {
-      background: rgba(76, 175, 80, 0.3);
-      border: 1px solid rgba(76, 175, 80, 0.5);
-    }
-    
-    .error {
-      background: rgba(244, 67, 54, 0.3);
-      border: 1px solid rgba(244, 67, 54, 0.5);
-    }
-    
-    .settings {
-      margin-top: 15px;
-      padding: 10px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 8px;
-    }
-    
-    .setting-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 8px 0;
-    }
-    
-    .toggle {
-      position: relative;
-      width: 40px;
-      height: 20px;
-      background: rgba(255,255,255,0.3);
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    
-    .toggle.active {
-      background: rgba(76, 175, 80, 0.8);
-    }
-    
-    .toggle::after {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 16px;
-      height: 16px;
-      background: white;
-      border-radius: 50%;
-      transition: transform 0.3s;
-    }
-    
-    .toggle.active::after {
-      transform: translateX(20px);
-    }
-    
-    .profile-section {
-      margin-top: 20px;
-      padding: 15px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 8px;
-    }
-    
-    .profile-section h3 {
-      margin: 0 0 15px 0;
-      font-size: 14px;
-      text-align: center;
-    }
-    
-    .profile-form {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    
-    .form-group label {
-      font-size: 11px;
-      font-weight: 600;
-      color: rgba(255,255,255,0.9);
-    }
-    
-    .form-group input {
-      padding: 6px 8px;
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 4px;
-      background: rgba(255,255,255,0.1);
-      color: white;
-      font-size: 11px;
-    }
-    
-    .form-group input::placeholder {
-      color: rgba(255,255,255,0.6);
-    }
-    
-    .form-group input:focus {
-      outline: none;
-      border-color: rgba(255,255,255,0.6);
-      background: rgba(255,255,255,0.15);
-    }
-    
-    #saveProfile {
-      margin-top: 10px;
-      width: 100%;
-      padding: 8px;
-      font-size: 12px;
-    }
-    
-    .status.error {
-      color: #e74c3c;
-    }
-    
-    .status.info {
-      color: #3498db;
-    }
-    
-    .status.success {
-      color: #27ae60;
-    }
-    
-    .ai-indicator {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 10px;
-      font-size: 12px;
-    }
-    
-    .ai-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #95a5a6;
-    }
-    
-    .ai-dot.active {
-      background-color: #27ae60;
-    }
-    
-    .ai-dot.error {
-      background-color: #e74c3c;
-    }
-    
-    .usage-stats {
-      background: #f8f9fa;
-      border-radius: 8px;
-      padding: 12px;
-      margin-top: 8px;
-    }
-    
-    .stat-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-    
-    .stat-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .stat-label {
-      font-size: 12px;
-      color: #6c757d;
-    }
-    
-    .stat-value {
-      font-size: 12px;
-      font-weight: 600;
-      color: #495057;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Form Filler</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>🤖 AI Form Filler</h1>
-    
-    <div class="controls">
-      <button id="fillForm" class="btn btn-primary">Fill Form</button>
-      <button id="analyzeForm" class="btn btn-secondary">Analyze Form</button>
-      <div class="ai-indicator" id="aiIndicator">
-        <span class="ai-dot"></span>
-        <span class="ai-text">AI: Not configured</span>
+    <!-- Header -->
+    <header class="header glass">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">AI</div>
+          <h1 class="logo-text">AI Form Filler</h1>
+        </div>
+        <div class="header-actions">
+          <div class="profile-completion">
+            <div class="completion-bar">
+              <div class="progress">
+                <div id="profileProgress" class="progress-bar" style="width: 0%"></div>
+              </div>
+              <span id="profileScore" class="completion-text">0%</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <button id="checkIframes" class="btn">Check for Embedded Forms</button>
-    
-    <div id="status" class="status"></div>
-    
-    <div class="settings">
-      <div class="setting-item">
-        <span>Auto-fill on page load</span>
-        <div id="autoFillToggle" class="toggle"></div>
-      </div>
-      <div class="setting-item">
-        <span>Smart suggestions</span>
-        <div id="smartToggle" class="toggle active"></div>
-      </div>
-    </div>
-    
-    <div class="profile-section">
-      <h3>🤖 AI Profile</h3>
-      <div class="profile-form">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" id="firstName" placeholder="Enter your first name">
-        </div>
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" id="lastName" placeholder="Enter your last name">
-        </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-          <label>Phone</label>
-          <input type="tel" id="phone" placeholder="Enter your phone number">
-        </div>
-        <div class="form-group">
-          <label>Address</label>
-          <input type="text" id="address" placeholder="Enter your address">
-        </div>
-        <div class="form-group">
-          <label>City</label>
-          <input type="text" id="city" placeholder="Enter your city">
-        </div>
-        <div class="form-group">
-          <label>State</label>
-          <input type="text" id="state" placeholder="Enter your state">
-        </div>
-        <div class="form-group">
-          <label>Zip Code</label>
-          <input type="text" id="zipCode" placeholder="Enter your zip code">
-        </div>
-        <div class="form-group">
-          <label>Country</label>
-          <input type="text" id="country" placeholder="Enter your country">
-        </div>
-        <div class="form-group">
-          <label>Company</label>
-          <input type="text" id="company" placeholder="Enter your company">
-        </div>
-        <div class="form-group">
-          <label>Job Title</label>
-          <input type="text" id="jobTitle" placeholder="Enter your job title">
-        </div>
-        <div class="form-group">
-          <label>Website</label>
-          <input type="url" id="website" placeholder="Enter your website">
-        </div>
-        <button id="saveProfile" class="btn">Save Profile</button>
-      </div>
-    </div>
+    </header>
 
-    <div class="section">
-      <h3>Settings</h3>
-      <div class="form-group">
-        <label class="toggle-label">
-          <input type="checkbox" id="autoFill" />
-          <span class="toggle-slider"></span>
-          Auto-fill forms on page load
-        </label>
-      </div>
-      <div class="form-group">
-        <label class="toggle-label">
-          <input type="checkbox" id="smartSuggestions" />
-          <span class="toggle-slider"></span>
-          Smart suggestions
-        </label>
-      </div>
-    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Quick Actions -->
+      <section class="card glass fade-in">
+        <div class="card-header">
+          <h2 class="card-title">Quick Actions</h2>
+          <div class="ai-status" id="aiStatus">
+            <span class="ai-dot"></span>
+            <span class="ai-text">AI: Loading...</span>
+          </div>
+        </div>
+        <div class="actions-grid">
+          <button id="fillForm" class="btn btn-primary">
+            <span class="action-icon">Auto</span>
+            Fill Form
+          </button>
+          <button id="analyzeForm" class="btn btn-secondary">
+            <span class="action-icon">Analyze</span>
+            Analyze Form
+          </button>
+          <button id="checkIframes" class="btn btn-secondary">
+            <span class="action-icon">Check</span>
+            Check Iframes
+          </button>
+        </div>
+        <div id="status" class="status-message"></div>
+      </section>
 
-    <div class="section">
-      <h3>AI Usage Statistics</h3>
-      <div id="usageStats" class="usage-stats">
-        <div class="stat-item">
-          <span class="stat-label">Today's AI Calls:</span>
-          <span id="dailyCalls" class="stat-value">-</span>
+      <!-- Profile Overview -->
+      <section class="card glass fade-in">
+        <div class="card-header">
+          <h2 class="card-title">Profile Overview</h2>
+          <button id="editProfile" class="btn btn-secondary btn-sm">
+            <span class="action-icon">Edit</span>
+            Edit
+          </button>
         </div>
-        <div class="stat-item">
-          <span class="stat-label">Total AI Calls:</span>
-          <span id="totalCalls" class="stat-value">-</span>
+        <div class="profile-summary">
+          <div class="profile-avatar">
+            <div class="avatar-placeholder">
+              <span id="avatarInitials">JD</span>
+            </div>
+          </div>
+          <div class="profile-info">
+            <h3 id="profileName" class="profile-name">John Doe</h3>
+            <p id="profileTitle" class="profile-title">Software Engineer</p>
+            <p id="profileEmail" class="profile-email">john.doe@example.com</p>
+          </div>
         </div>
-        <div class="stat-item">
-          <span class="stat-label">Success Rate:</span>
-          <span id="successRate" class="stat-value">-</span>
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-label">Forms Filled</span>
+            <span id="formsFilled" class="stat-value">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Success Rate</span>
+            <span id="successRate" class="stat-value">0%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Usage Statistics -->
+      <section class="card glass fade-in">
+        <div class="card-header">
+          <h2 class="card-title">AI Usage</h2>
+          <div class="usage-badge">
+            <span class="badge badge-primary">Free</span>
+          </div>
+        </div>
+        <div class="usage-stats">
+          <div class="stat-item">
+            <span class="stat-label">Today's AI Calls</span>
+            <span id="dailyCalls" class="stat-value">0/10</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Total AI Calls</span>
+            <span id="totalCalls" class="stat-value">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">AI Success Rate</span>
+            <span id="aiSuccessRate" class="stat-value">0%</span>
+          </div>
+        </div>
+        <div class="upgrade-prompt">
+          <p class="upgrade-text">Upgrade to Pro for unlimited AI form filling!</p>
+          <button id="upgradeBtn" class="btn btn-primary btn-sm">
+            <span class="action-icon">Upgrade</span>
+            Upgrade Now
+          </button>
+        </div>
+      </section>
+
+      <!-- Settings -->
+      <section class="card glass fade-in">
+        <div class="card-header">
+          <h2 class="card-title">Settings</h2>
+        </div>
+        <div class="settings-grid">
+          <div class="setting-item">
+            <label class="toggle-label">
+              <input type="checkbox" id="autoFill" />
+              <span class="toggle-slider"></span>
+              <span class="setting-text">Auto-fill forms on page load</span>
+            </label>
+          </div>
+          <div class="setting-item">
+            <label class="toggle-label">
+              <input type="checkbox" id="smartSuggestions" />
+              <span class="toggle-slider"></span>
+              <span class="setting-text">Smart suggestions</span>
+            </label>
+          </div>
+          <div class="setting-item">
+            <label class="toggle-label">
+              <input type="checkbox" id="privacyMode" />
+              <span class="toggle-slider"></span>
+              <span class="setting-text">Privacy mode</span>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal hidden">
+      <div class="modal-overlay"></div>
+      <div class="modal-content glass">
+        <div class="modal-header">
+          <h2 class="modal-title">Edit Profile</h2>
+          <button id="closeModal" class="btn btn-secondary btn-sm">Close</button>
+        </div>
+        <div class="modal-body">
+          <!-- Profile Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="basic">Basic Info</button>
+            <button class="tab-btn" data-tab="professional">Professional</button>
+            <button class="tab-btn" data-tab="experience">Experience</button>
+            <button class="tab-btn" data-tab="education">Education</button>
+            <button class="tab-btn" data-tab="skills">Skills</button>
+            <button class="tab-btn" data-tab="resume">Resume</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <!-- Basic Info Tab -->
+            <div id="basic-tab" class="tab-pane active">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label">First Name</label>
+                  <input type="text" id="firstName" class="form-input" placeholder="John">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Last Name</label>
+                  <input type="text" id="lastName" class="form-input" placeholder="Doe">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" id="email" class="form-input" placeholder="john.doe@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Phone</label>
+                  <input type="tel" id="phone" class="form-input" placeholder="+1 (555) 123-4567">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Address</label>
+                  <input type="text" id="address" class="form-input" placeholder="123 Main St">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">City</label>
+                  <input type="text" id="city" class="form-input" placeholder="New York">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">State</label>
+                  <input type="text" id="state" class="form-input" placeholder="NY">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Zip Code</label>
+                  <input type="text" id="zipCode" class="form-input" placeholder="10001">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Country</label>
+                  <input type="text" id="country" class="form-input" placeholder="United States">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Website</label>
+                  <input type="url" id="website" class="form-input" placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">LinkedIn</label>
+                  <input type="url" id="linkedin" class="form-input" placeholder="https://linkedin.com/in/johndoe">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">GitHub</label>
+                  <input type="url" id="github" class="form-input" placeholder="https://github.com/johndoe">
+                </div>
+              </div>
+            </div>
+
+            <!-- Professional Tab -->
+            <div id="professional-tab" class="tab-pane">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label">Job Title</label>
+                  <input type="text" id="jobTitle" class="form-input" placeholder="Software Engineer">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Company</label>
+                  <input type="text" id="company" class="form-input" placeholder="Tech Corp">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Industry</label>
+                  <input type="text" id="industry" class="form-input" placeholder="Technology">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Years of Experience</label>
+                  <input type="number" id="yearsOfExperience" class="form-input" placeholder="5">
+                </div>
+                <div class="form-group full-width">
+                  <label class="form-label">Professional Summary</label>
+                  <textarea id="summary" class="form-input form-textarea" placeholder="Brief professional summary..."></textarea>
+                </div>
+                <div class="form-group full-width">
+                  <label class="form-label">Bio</label>
+                  <textarea id="bio" class="form-input form-textarea" placeholder="Personal bio..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Tab -->
+            <div id="experience-tab" class="tab-pane">
+              <div class="section-header">
+                <h3>Work Experience</h3>
+                <button id="addExperience" class="btn btn-primary btn-sm">
+                  <span class="action-icon">Add</span>
+                  Add Experience
+                </button>
+              </div>
+              <div id="experienceList" class="experience-list">
+                <!-- Experience items will be added here -->
+              </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div id="education-tab" class="tab-pane">
+              <div class="section-header">
+                <h3>Education</h3>
+                <button id="addEducation" class="btn btn-primary btn-sm">
+                  <span class="action-icon">Add</span>
+                  Add Education
+                </button>
+              </div>
+              <div id="educationList" class="education-list">
+                <!-- Education items will be added here -->
+              </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div id="skills-tab" class="tab-pane">
+              <div class="skills-section">
+                <h3>Technical Skills</h3>
+                <div class="skills-input-group">
+                  <input type="text" id="technicalSkill" class="form-input" placeholder="e.g., JavaScript, Python">
+                  <button id="addTechnicalSkill" class="btn btn-primary btn-sm">Add</button>
+                </div>
+                <div id="technicalSkillsList" class="skills-list"></div>
+              </div>
+              
+              <div class="skills-section">
+                <h3>Languages</h3>
+                <div class="skills-input-group">
+                  <input type="text" id="languageSkill" class="form-input" placeholder="e.g., English, Spanish">
+                  <button id="addLanguageSkill" class="btn btn-primary btn-sm">Add</button>
+                </div>
+                <div id="languagesList" class="skills-list"></div>
+              </div>
+              
+              <div class="skills-section">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-input-group">
+                  <input type="text" id="toolSkill" class="form-input" placeholder="e.g., Git, Docker">
+                  <button id="addToolSkill" class="btn btn-primary btn-sm">Add</button>
+                </div>
+                <div id="toolsList" class="skills-list"></div>
+              </div>
+            </div>
+
+            <!-- Resume Tab -->
+            <div id="resume-tab" class="tab-pane">
+              <div class="resume-section">
+                <h3>Resume Text</h3>
+                <p class="help-text">Paste your resume content here for better AI form filling</p>
+                <textarea id="resumeText" class="form-input form-textarea" placeholder="Paste your resume content here..."></textarea>
+              </div>
+              
+              <div class="resume-section">
+                <h3>Upload Resume</h3>
+                <div class="file-upload">
+                  <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.txt" class="file-input">
+                  <label for="resumeFile" class="file-label">
+                    <span class="file-icon">📄</span>
+                    <span class="file-text">Choose file or drag here</span>
+                  </label>
+                </div>
+                <p class="file-info">Supported formats: PDF, DOC, DOCX, TXT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="saveProfile" class="btn btn-primary">Save Profile</button>
         </div>
       </div>
     </div>
   </div>
-  
+
+  <script src="user-profile.js"></script>
   <script src="popup.js"></script>
 </body>
 </html> 

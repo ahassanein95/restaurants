@@ -351,21 +351,33 @@ class AIFormFiller {
   async getUserProfile() {
     return new Promise((resolve) => {
       chrome.storage.sync.get(['userProfile'], (result) => {
-        const profile = result.userProfile || {
-          firstName: 'John',
-          lastName: 'Doe',
-          email: 'john.doe@example.com',
-          phone: '+1-555-123-4567',
-          address: '123 Main St',
-          city: 'New York',
-          state: 'NY',
-          zipCode: '10001',
-          country: 'USA',
-          company: 'Tech Corp',
-          jobTitle: 'Software Engineer',
-          website: 'https://example.com'
-        };
-        resolve(profile);
+        const profile = result.userProfile || {};
+        
+        // Log the profile data for debugging
+        console.log('📋 Loading user profile:', profile);
+        
+        // Only use fallback values if no profile exists at all
+        if (!profile.firstName && !profile.email) {
+          console.log('⚠️ No profile found, using default values');
+          const defaultProfile = {
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'john.doe@example.com',
+            phone: '+1-555-123-4567',
+            address: '123 Main St',
+            city: 'New York',
+            state: 'NY',
+            zipCode: '10001',
+            country: 'USA',
+            company: 'Tech Corp',
+            jobTitle: 'Software Engineer',
+            website: 'https://example.com'
+          };
+          resolve(defaultProfile);
+        } else {
+          console.log('✅ Using saved profile data');
+          resolve(profile);
+        }
       });
     });
   }
@@ -380,6 +392,13 @@ class AIFormFiller {
     };
 
     console.log(`🤖 AI Form Filler: Analyzing field "${field.name}" (${field.type})`);
+    console.log(`📋 Field details:`, {
+      name: field.name,
+      placeholder: field.placeholder,
+      label: field.label,
+      type: field.type,
+      required: field.required
+    });
 
     // For select fields, check available options first
     if (field.type === 'select-one' || field.type === 'select') {
@@ -488,28 +507,27 @@ class AIFormFiller {
 
   fillField(element, value) {
     try {
-      // Set the value
+      // Clear any existing visual feedback first
+      element.style.backgroundColor = '';
+      element.style.border = '';
+      element.style.color = '';
+      element.style.fontWeight = '';
+      
+      // Set the value using multiple approaches for maximum compatibility
       element.value = value;
       element.setAttribute('value', value);
       
-      // Try to override any getters/setters
-      try {
-        Object.defineProperty(element, 'value', {
-          value: value,
-          writable: true,
-          configurable: true
-        });
-      } catch (e) {
-        // Property override failed, continue with normal approach
-      }
+      // For React and other frameworks, also set the defaultValue
+      element.defaultValue = value;
       
-      // Trigger focus event
+      // Trigger focus event first
       element.focus();
       
       // Trigger multiple events to ensure the website recognizes the change
       const events = ['input', 'change', 'blur', 'keyup', 'keydown'];
       events.forEach(eventType => {
-        element.dispatchEvent(new Event(eventType, { bubbles: true }));
+        const event = new Event(eventType, { bubbles: true, cancelable: true });
+        element.dispatchEvent(event);
       });
       
       // Handle select elements
@@ -542,6 +560,14 @@ class AIFormFiller {
       
       // Add visual feedback
       this.addVisualFeedback(element, value);
+      
+      // Force a re-render by briefly changing and restoring the value
+      setTimeout(() => {
+        const currentValue = element.value;
+        element.value = '';
+        element.value = currentValue;
+        element.dispatchEvent(new Event('input', { bubbles: true }));
+      }, 10);
       
     } catch (error) {
       console.error('Error filling field:', error);
