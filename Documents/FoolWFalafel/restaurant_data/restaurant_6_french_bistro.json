@@ -1,0 +1,64 @@
+{
+  "name": "Le Petit Jardin",
+  "description": "Classic French bistro offering traditional Parisian cuisine with a romantic ambiance. Our chef brings authentic French techniques and seasonal ingredients together to create memorable dining experiences.",
+  "phone": "(555) 654-3210",
+  "address": "234 Rue de la Paix, New Orleans LA 70112",
+  "email": "bonjour@lepetitjardin.com",
+  "website": "www.lepetitjardinbistro.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Entrées": [
+      {"item": "Escargot de Bourgogne", "price": 16, "currency": "USD"},
+      {"item": "Pâté de Foie Gras", "price": 22, "currency": "USD"},
+      {"item": "French Onion Soup", "price": 12, "currency": "USD"},
+      {"item": "Salade Niçoise", "price": 18, "currency": "USD"},
+      {"item": "Quiche Lorraine", "price": 14, "currency": "USD"}
+    ],
+    "Plats Principaux": [
+      {"item": "Coq au Vin", "price": 26, "currency": "USD"},
+      {"item": "Bouillabaisse", "price": 32, "currency": "USD"},
+      {"item": "Duck à l'Orange", "price": 28, "currency": "USD"},
+      {"item": "Beef Bourguignon", "price": 30, "currency": "USD"},
+      {"item": "Ratatouille Provençale", "price": 22, "currency": "USD"}
+    ],
+    "Poissons": [
+      {"item": "Sole Meunière", "price": 29, "currency": "USD"},
+      {"item": "Salmon en Papillote", "price": 26, "currency": "USD"},
+      {"item": "Moules Marinières", "price": 24, "currency": "USD"},
+      {"item": "Lobster Thermidor", "price": 38, "currency": "USD"},
+      {"item": "Sea Bass with Herbs", "price": 31, "currency": "USD"}
+    ],
+    "Fromages": [
+      {"item": "Brie de Meaux", "price": 14, "currency": "USD"},
+      {"item": "Roquefort", "price": 16, "currency": "USD"},
+      {"item": "Camembert", "price": 13, "currency": "USD"},
+      {"item": "Selection of 3 Cheeses", "price": 19, "currency": "USD"},
+      {"item": "Cheese & Charcuterie Board", "price": 24, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Crème Brûlée", "price": 10, "currency": "USD"},
+      {"item": "Tarte Tatin", "price": 11, "currency": "USD"},
+      {"item": "Chocolate Soufflé", "price": 14, "currency": "USD"},
+      {"item": "Profiteroles", "price": 9, "currency": "USD"},
+      {"item": "Macarons (3 pieces)", "price": 8, "currency": "USD"}
+    ],
+    "Vins & Boissons": [
+      {"item": "Bordeaux (Glass)", "price": 15, "currency": "USD"},
+      {"item": "Champagne (Glass)", "price": 18, "currency": "USD"},
+      {"item": "Côtes du Rhône (Glass)", "price": 12, "currency": "USD"},
+      {"item": "French Press Coffee", "price": 5, "currency": "USD"},
+      {"item": "Perrier", "price": 4, "currency": "USD"}
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Spice Route Indian Cuisine",
+  "description": "Authentic Indian flavors from across the subcontinent. Our chefs use traditional spices and cooking methods to create aromatic curries, fresh naan, and flavorful biryanis that transport you to India.",
+  "phone": "(555) 876-5432",
+  "address": "567 Maharaja Boulevard, Seattle WA 98101",
+  "email": "namaste@spicerouteindian.com",
+  "website": "www.spicerouteindian.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Appetizers": [
+      {"item": "Samosas (3 pieces)", "price": 8, "currency": "USD"},
+      {"item": "Pakoras (Mixed)", "price": 9, "currency": "USD"},
+      {"item": "Tandoori Wings", "price": 12, "currency": "USD"},
+      {"item": "Papadum (4 pieces)", "price": 5, "currency": "USD"},
+      {"item": "Chaat Platter", "price": 11, "currency": "USD"}
+    ],
+    "Curries": [
+      {"item": "Butter Chicken", "price": 17, "currency": "USD"},
+      {"item": "Chicken Tikka Masala", "price": 17, "currency": "USD"},
+      {"item": "Lamb Vindaloo", "price": 19, "currency": "USD"},
+      {"item": "Palak Paneer", "price": 15, "currency": "USD"},
+      {"item": "Dal Makhani", "price": 14, "currency": "USD"},
+      {"item": "Rogan Josh", "price": 18, "currency": "USD"}
+    ],
+    "Tandoori": [
+      {"item": "Tandoori Chicken (Half)", "price": 16, "currency": "USD"},
+      {"item": "Chicken Tikka", "price": 18, "currency": "USD"},
+      {"item": "Lamb Seekh Kebab", "price": 20, "currency": "USD"},
+      {"item": "Tandoori Prawns", "price": 22, "currency": "USD"},
+      {"item": "Mixed Grill Platter", "price": 28, "currency": "USD"}
+    ],
+    "Biryani & Rice": [
+      {"item": "Chicken Biryani", "price": 16, "currency": "USD"},
+      {"item": "Lamb Biryani", "price": 18, "currency": "USD"},
+      {"item": "Vegetable Biryani", "price": 14, "currency": "USD"},
+      {"item": "Saffron Rice", "price": 5, "currency": "USD"},
+      {"item": "Jeera Rice", "price": 4, "currency": "USD"}
+    ],
+    "Breads": [
+      {"item": "Naan (Plain)", "price": 4, "currency": "USD"},
+      {"item": "Garlic Naan", "price": 5, "currency": "USD"},
+      {"item": "Butter Naan", "price": 5, "currency": "USD"},
+      {"item": "Cheese Naan", "price": 6, "currency": "USD"},
+      {"item": "Roti", "price": 3, "currency": "USD"}
+    ],
+    "Beverages": [
+      {"item": "Mango Lassi", "price": 5, "currency": "USD"},
+      {"item": "Sweet Lassi", "price": 4, "currency": "USD"},
+      {"item": "Masala Chai", "price": 4, "currency": "USD"},
+      {"item": "Indian Lemonade", "price": 4, "currency": "USD"},
+      {"item": "Kingfisher Beer", "price": 5, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Gulab Jamun (3 pieces)", "price": 7, "currency": "USD"},
+      {"item": "Ras Malai (3 pieces)", "price": 8, "currency": "USD"},
+      {"item": "Kheer", "price": 6, "currency": "USD"},
+      {"item": "Kulfi", "price": 6, "currency": "USD"}
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#8B5A2B"/>
+  <rect x="100" y="100" width="600" height="300" fill="#A0522D" rx="20"/>
+  <circle cx="200" cy="200" r="30" fill="#F5DEB3"/>
+  <circle cx="400" cy="180" r="25" fill="#F5DEB3"/>
+  <circle cx="600" cy="220" r="35" fill="#F5DEB3"/>
+  <rect x="150" y="320" width="500" height="20" fill="#654321" rx="10"/>
+  <rect x="200" y="350" width="400" height="15" fill="#654321" rx="7"/>
+  <text x="400" y="450" font-family="Arial" font-size="28" fill="#F5DEB3" text-anchor="middle" font-weight="bold">Italian Restaurant Interior</text>
+</svg>

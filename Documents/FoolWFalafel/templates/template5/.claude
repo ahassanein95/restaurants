@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "autoApprove": true,
+    "permissionLevel": "high",
+    "confirmCommands": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Prime Cut Steakhouse",
+  "description": "Upscale steakhouse serving USDA Prime beef, fresh seafood, and classic American cuisine. Elegant atmosphere with exceptional service makes us the perfect choice for special occasions and business dinners.",
+  "phone": "(555) 987-6543",
+  "address": "789 Cattleman's Drive, Denver CO 80202",
+  "email": "reservations@primecutsteakhouse.com",
+  "website": "www.primecutsteakhouse.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Appetizers": [
+      {"item": "Shrimp Cocktail", "price": 18, "currency": "USD"},
+      {"item": "Oysters Rockefeller", "price": 22, "currency": "USD"},
+      {"item": "Steak Tartare", "price": 24, "currency": "USD"},
+      {"item": "Lobster Bisque", "price": 16, "currency": "USD"},
+      {"item": "Caesar Salad", "price": 14, "currency": "USD"}
+    ],
+    "Prime Steaks": [
+      {"item": "Filet Mignon 8oz", "price": 48, "currency": "USD"},
+      {"item": "Ribeye 16oz", "price": 55, "currency": "USD"},
+      {"item": "New York Strip 14oz", "price": 52, "currency": "USD"},
+      {"item": "Porterhouse 24oz", "price": 68, "currency": "USD"},
+      {"item": "Tomahawk 32oz", "price": 85, "currency": "USD"}
+    ],
+    "Seafood": [
+      {"item": "Maine Lobster Tail", "price": 42, "currency": "USD"},
+      {"item": "Pan Seared Salmon", "price": 32, "currency": "USD"},
+      {"item": "Grilled Swordfish", "price": 36, "currency": "USD"},
+      {"item": "Chilean Sea Bass", "price": 44, "currency": "USD"},
+      {"item": "King Crab Legs", "price": 58, "currency": "USD"}
+    ],
+    "Sides": [
+      {"item": "Truffle Mac & Cheese", "price": 16, "currency": "USD"},
+      {"item": "Grilled Asparagus", "price": 12, "currency": "USD"},
+      {"item": "Loaded Baked Potato", "price": 14, "currency": "USD"},
+      {"item": "Creamed Spinach", "price": 11, "currency": "USD"},
+      {"item": "Wild Mushroom Risotto", "price": 15, "currency": "USD"}
+    ],
+    "Wines": [
+      {"item": "House Wine (Glass)", "price": 12, "currency": "USD"},
+      {"item": "Premium Cabernet (Glass)", "price": 18, "currency": "USD"},
+      {"item": "Chardonnay (Glass)", "price": 14, "currency": "USD"},
+      {"item": "Vintage Port (Glass)", "price": 22, "currency": "USD"},
+      {"item": "Champagne (Glass)", "price": 20, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "New York Cheesecake", "price": 12, "currency": "USD"},
+      {"item": "Chocolate Lava Cake", "price": 14, "currency": "USD"},
+      {"item": "Crème Brûlée", "price": 11, "currency": "USD"},
+      {"item": "Bananas Foster", "price": 13, "currency": "USD"}
+    ]
+  }
+}

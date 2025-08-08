@@ -1,0 +1,63 @@
+{
+  "name": "Bella Napoli Bistro",
+  "description": "Authentic Italian cuisine crafted with love and tradition. Fresh pasta made daily, wood-fired pizzas, and the finest imported ingredients create an unforgettable dining experience in the heart of the city.",
+  "phone": "(555) 789-3421",
+  "address": "1247 Venetian Street, Chicago IL 60614",
+  "email": "reservations@bellanapoli.com",
+  "website": "www.bellanapolibistro.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Appetizers": [
+      {"item": "Bruschetta Trio", "price": 14, "currency": "USD"},
+      {"item": "Antipasto Platter", "price": 18, "currency": "USD"},
+      {"item": "Fried Calamari", "price": 16, "currency": "USD"},
+      {"item": "Caprese Salad", "price": 13, "currency": "USD"},
+      {"item": "Garlic Bread", "price": 8, "currency": "USD"}
+    ],
+    "Pasta": [
+      {"item": "Spaghetti Carbonara", "price": 22, "currency": "USD"},
+      {"item": "Fettuccine Alfredo", "price": 20, "currency": "USD"},
+      {"item": "Penne Arrabbiata", "price": 18, "currency": "USD"},
+      {"item": "Lasagna della Casa", "price": 24, "currency": "USD"},
+      {"item": "Ravioli Spinach & Ricotta", "price": 21, "currency": "USD"}
+    ],
+    "Pizza": [
+      {"item": "Margherita", "price": 16, "currency": "USD"},
+      {"item": "Pepperoni", "price": 18, "currency": "USD"},
+      {"item": "Quattro Stagioni", "price": 22, "currency": "USD"},
+      {"item": "Prosciutto e Funghi", "price": 24, "currency": "USD"},
+      {"item": "Vegetarian Deluxe", "price": 20, "currency": "USD"}
+    ],
+    "Main Courses": [
+      {"item": "Chicken Parmigiana", "price": 26, "currency": "USD"},
+      {"item": "Veal Marsala", "price": 32, "currency": "USD"},
+      {"item": "Grilled Salmon", "price": 28, "currency": "USD"},
+      {"item": "Osso Buco", "price": 34, "currency": "USD"},
+      {"item": "Eggplant Parmigiana", "price": 22, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Tiramisu", "price": 9, "currency": "USD"},
+      {"item": "Cannoli Siciliani", "price": 8, "currency": "USD"},
+      {"item": "Panna Cotta", "price": 7, "currency": "USD"},
+      {"item": "Gelato (3 scoops)", "price": 10, "currency": "USD"}
+    ],
+    "Beverages": [
+      {"item": "Italian Soda", "price": 4, "currency": "USD"},
+      {"item": "Espresso", "price": 3, "currency": "USD"},
+      {"item": "Cappuccino", "price": 5, "currency": "USD"},
+      {"item": "Wine by Glass", "price": 8, "currency": "USD"},
+      {"item": "San Pellegrino", "price": 4, "currency": "USD"}
+    ]
+  }
+}

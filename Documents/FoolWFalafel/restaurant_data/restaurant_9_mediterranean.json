@@ -1,0 +1,70 @@
+{
+  "name": "Olive & Fig Mediterranean",
+  "description": "Fresh Mediterranean cuisine featuring Greek, Turkish, and Lebanese specialties. Our family recipes use the finest olive oils, fresh herbs, and authentic spices to bring the taste of the Mediterranean coast to you.",
+  "phone": "(555) 210-9876",
+  "address": "345 Aegean Drive, Miami FL 33101",
+  "email": "yamas@oliveandfig.com",
+  "website": "www.oliveandfigmed.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Mezze": [
+      {"item": "Hummus with Pita", "price": 9, "currency": "USD"},
+      {"item": "Baba Ganoush", "price": 10, "currency": "USD"},
+      {"item": "Tabbouleh", "price": 8, "currency": "USD"},
+      {"item": "Dolmades (6 pieces)", "price": 12, "currency": "USD"},
+      {"item": "Mezze Platter", "price": 22, "currency": "USD"}
+    ],
+    "Grilled Specialties": [
+      {"item": "Lamb Souvlaki", "price": 24, "currency": "USD"},
+      {"item": "Chicken Gyros", "price": 16, "currency": "USD"},
+      {"item": "Grilled Octopus", "price": 26, "currency": "USD"},
+      {"item": "Mixed Grill Platter", "price": 32, "currency": "USD"},
+      {"item": "Vegetarian Kebabs", "price": 18, "currency": "USD"}
+    ],
+    "Seafood": [
+      {"item": "Grilled Branzino", "price": 28, "currency": "USD"},
+      {"item": "Shrimp Saganaki", "price": 22, "currency": "USD"},
+      {"item": "Seafood Paella", "price": 34, "currency": "USD"},
+      {"item": "Fried Calamari", "price": 16, "currency": "USD"},
+      {"item": "Mediterranean Salmon", "price": 25, "currency": "USD"}
+    ],
+    "Traditional Dishes": [
+      {"item": "Moussaka", "price": 20, "currency": "USD"},
+      {"item": "Pastitsio", "price": 19, "currency": "USD"},
+      {"item": "Spanakopita", "price": 14, "currency": "USD"},
+      {"item": "Stuffed Peppers", "price": 17, "currency": "USD"},
+      {"item": "Lemon Rice Pilaf", "price": 6, "currency": "USD"}
+    ],
+    "Salads": [
+      {"item": "Greek Village Salad", "price": 14, "currency": "USD"},
+      {"item": "Mediterranean Quinoa Salad", "price": 13, "currency": "USD"},
+      {"item": "Arugula & Fig Salad", "price": 15, "currency": "USD"},
+      {"item": "Fattoush", "price": 12, "currency": "USD"},
+      {"item": "Warm Lentil Salad", "price": 11, "currency": "USD"}
+    ],
+    "Beverages": [
+      {"item": "Greek Wine (Glass)", "price": 9, "currency": "USD"},
+      {"item": "Ouzo", "price": 8, "currency": "USD"},
+      {"item": "Turkish Coffee", "price": 5, "currency": "USD"},
+      {"item": "Fresh Lemonade", "price": 4, "currency": "USD"},
+      {"item": "Mint Tea", "price": 4, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Baklava (3 pieces)", "price": 9, "currency": "USD"},
+      {"item": "Greek Yogurt with Honey", "price": 7, "currency": "USD"},
+      {"item": "Galaktoboureko", "price": 8, "currency": "USD"},
+      {"item": "Rice Pudding", "price": 6, "currency": "USD"}
+    ]
+  }
+}

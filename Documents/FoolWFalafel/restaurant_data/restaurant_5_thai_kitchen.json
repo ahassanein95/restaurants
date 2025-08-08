@@ -1,0 +1,70 @@
+{
+  "name": "Golden Dragon Thai Kitchen",
+  "description": "Authentic Thai flavors with a perfect balance of sweet, sour, salty, and spicy. Our family recipes have been passed down for generations, bringing the true taste of Thailand to your neighborhood.",
+  "phone": "(555) 321-0987",
+  "address": "1523 Spice Market Road, Portland OR 97201",
+  "email": "orders@goldendragonthai.com",
+  "website": "www.goldendragonthai.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Appetizers": [
+      {"item": "Spring Rolls (4 pieces)", "price": 8, "currency": "USD"},
+      {"item": "Chicken Satay (5 skewers)", "price": 12, "currency": "USD"},
+      {"item": "Tom Yum Soup", "price": 9, "currency": "USD"},
+      {"item": "Papaya Salad", "price": 10, "currency": "USD"},
+      {"item": "Fried Tofu", "price": 7, "currency": "USD"}
+    ],
+    "Noodles": [
+      {"item": "Pad Thai", "price": 14, "currency": "USD"},
+      {"item": "Drunken Noodles", "price": 15, "currency": "USD"},
+      {"item": "Pad See Ew", "price": 14, "currency": "USD"},
+      {"item": "Thai Lo Mein", "price": 13, "currency": "USD"},
+      {"item": "Boat Noodle Soup", "price": 16, "currency": "USD"}
+    ],
+    "Curries": [
+      {"item": "Green Curry", "price": 16, "currency": "USD"},
+      {"item": "Red Curry", "price": 16, "currency": "USD"},
+      {"item": "Yellow Curry", "price": 15, "currency": "USD"},
+      {"item": "Panang Curry", "price": 17, "currency": "USD"},
+      {"item": "Massaman Curry", "price": 18, "currency": "USD"}
+    ],
+    "Stir Fry": [
+      {"item": "Basil Chicken", "price": 15, "currency": "USD"},
+      {"item": "Cashew Chicken", "price": 16, "currency": "USD"},
+      {"item": "Sweet & Sour Pork", "price": 14, "currency": "USD"},
+      {"item": "Beef Broccoli", "price": 15, "currency": "USD"},
+      {"item": "Garlic Pepper Shrimp", "price": 18, "currency": "USD"}
+    ],
+    "Rice Dishes": [
+      {"item": "Thai Fried Rice", "price": 13, "currency": "USD"},
+      {"item": "Pineapple Fried Rice", "price": 15, "currency": "USD"},
+      {"item": "Crab Fried Rice", "price": 17, "currency": "USD"},
+      {"item": "Coconut Rice", "price": 4, "currency": "USD"},
+      {"item": "Jasmine Rice", "price": 3, "currency": "USD"}
+    ],
+    "Beverages": [
+      {"item": "Thai Iced Tea", "price": 4, "currency": "USD"},
+      {"item": "Fresh Coconut Water", "price": 5, "currency": "USD"},
+      {"item": "Mango Lassi", "price": 5, "currency": "USD"},
+      {"item": "Lychee Juice", "price": 4, "currency": "USD"},
+      {"item": "Hot Jasmine Tea", "price": 3, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Mango Sticky Rice", "price": 8, "currency": "USD"},
+      {"item": "Fried Ice Cream", "price": 7, "currency": "USD"},
+      {"item": "Coconut Flan", "price": 6, "currency": "USD"},
+      {"item": "Thai Donuts", "price": 5, "currency": "USD"}
+    ]
+  }
+}

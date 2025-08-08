@@ -1,0 +1,70 @@
+{
+  "name": "Burger Paradise",
+  "description": "Gourmet burgers made with locally sourced beef, fresh toppings, and artisan buns. From classic cheeseburgers to creative specialty burgers, we're your destination for the perfect burger experience.",
+  "phone": "(555) 098-7654",
+  "address": "1234 Burger Lane, Nashville TN 37201",
+  "email": "hello@burgerparadise.com",
+  "website": "www.burgerparadise.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Classic Burgers": [
+      {"item": "Paradise Cheeseburger", "price": 12, "currency": "USD"},
+      {"item": "Bacon Cheeseburger", "price": 14, "currency": "USD"},
+      {"item": "Double Paradise", "price": 16, "currency": "USD"},
+      {"item": "Mushroom Swiss", "price": 13, "currency": "USD"},
+      {"item": "BBQ Burger", "price": 13, "currency": "USD"}
+    ],
+    "Specialty Burgers": [
+      {"item": "Truffle Burger", "price": 18, "currency": "USD"},
+      {"item": "Spicy Ghost Pepper", "price": 15, "currency": "USD"},
+      {"item": "Avocado Turkey Burger", "price": 14, "currency": "USD"},
+      {"item": "Blue Cheese & Buffalo", "price": 16, "currency": "USD"},
+      {"item": "The Paradise Stack", "price": 20, "currency": "USD"}
+    ],
+    "Chicken & Alternatives": [
+      {"item": "Crispy Chicken Sandwich", "price": 13, "currency": "USD"},
+      {"item": "Grilled Chicken Club", "price": 14, "currency": "USD"},
+      {"item": "Impossible Burger", "price": 15, "currency": "USD"},
+      {"item": "Black Bean Burger", "price": 12, "currency": "USD"},
+      {"item": "Fish Sandwich", "price": 14, "currency": "USD"}
+    ],
+    "Sides": [
+      {"item": "Classic Fries", "price": 5, "currency": "USD"},
+      {"item": "Sweet Potato Fries", "price": 6, "currency": "USD"},
+      {"item": "Truffle Fries", "price": 8, "currency": "USD"},
+      {"item": "Onion Rings", "price": 7, "currency": "USD"},
+      {"item": "Loaded Nachos", "price": 9, "currency": "USD"}
+    ],
+    "Appetizers": [
+      {"item": "Mozzarella Sticks", "price": 8, "currency": "USD"},
+      {"item": "Buffalo Wings (8 pieces)", "price": 12, "currency": "USD"},
+      {"item": "Jalapeño Poppers", "price": 9, "currency": "USD"},
+      {"item": "Loaded Potato Skins", "price": 10, "currency": "USD"},
+      {"item": "Fried Pickles", "price": 7, "currency": "USD"}
+    ],
+    "Drinks": [
+      {"item": "Craft Soda", "price": 3, "currency": "USD"},
+      {"item": "Fresh Lemonade", "price": 4, "currency": "USD"},
+      {"item": "Milkshake (Vanilla/Chocolate/Strawberry)", "price": 6, "currency": "USD"},
+      {"item": "Local Beer", "price": 5, "currency": "USD"},
+      {"item": "Iced Tea", "price": 3, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Apple Pie à la Mode", "price": 7, "currency": "USD"},
+      {"item": "Chocolate Brownie Sundae", "price": 8, "currency": "USD"},
+      {"item": "Cheesecake Slice", "price": 6, "currency": "USD"},
+      {"item": "Cookies & Cream Shake", "price": 7, "currency": "USD"}
+    ]
+  }
+}

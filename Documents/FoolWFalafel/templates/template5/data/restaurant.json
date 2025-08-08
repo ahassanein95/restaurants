@@ -1,0 +1,74 @@
+{
+  "name": "Burger Bliss",
+  "tagline": "Fresh, Fast & Delicious",
+  "adjectives": ["Fresh", "Fast", "Tasty", "Fun"],
+  "image": "/restaurant-elegant.svg",
+  "description": "Serving up the juiciest burgers, crispiest fries, and coldest shakes in town. Made fresh daily with quality ingredients.",
+  "menu": {
+    "burgers": [
+      {
+        "name": "Classic Burger",
+        "price": "$8.99",
+        "description": "Beef patty, lettuce, tomato, onion, pickles"
+      },
+      {
+        "name": "Cheeseburger",
+        "price": "$9.99",
+        "description": "Classic burger with melted cheddar cheese"
+      },
+      {
+        "name": "BBQ Bacon Burger",
+        "price": "$12.99",
+        "description": "Beef patty, bacon, BBQ sauce, onion rings"
+      }
+    ],
+    "sides": [
+      {
+        "name": "French Fries",
+        "price": "$3.99",
+        "description": "Crispy golden fries"
+      },
+      {
+        "name": "Onion Rings",
+        "price": "$4.99",
+        "description": "Beer-battered onion rings"
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "price": "$5.99",
+        "description": "Crispy mozzarella with marinara sauce"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Vanilla Shake",
+        "price": "$4.99",
+        "description": "Thick vanilla milkshake"
+      },
+      {
+        "name": "Coca-Cola",
+        "price": "$2.99",
+        "description": "Ice-cold Coke"
+      },
+      {
+        "name": "Iced Tea",
+        "price": "$2.49",
+        "description": "Fresh brewed sweet tea"
+      }
+    ]
+  },
+  "contact": {
+    "phone": "(555) 123-4567",
+    "email": "info@bellavista.com",
+    "address": "123 Main Street, Downtown City"
+  },
+  "hours": {
+    "monday": "Closed",
+    "tuesday": "5:00 PM - 10:00 PM",
+    "wednesday": "5:00 PM - 10:00 PM",
+    "thursday": "5:00 PM - 10:00 PM",
+    "friday": "5:00 PM - 11:00 PM",
+    "saturday": "4:00 PM - 11:00 PM",
+    "sunday": "4:00 PM - 9:00 PM"
+  }
+}

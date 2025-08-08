@@ -1,0 +1,70 @@
+{
+  "name": "Seoul Garden BBQ",
+  "description": "Premium Korean BBQ experience with table-side grilling, fresh banchan, and authentic Korean flavors. Our all-you-can-eat options and traditional recipes make every meal a Korean feast to remember.",
+  "phone": "(555) 543-2109",
+  "address": "890 Kimchi Lane, Los Angeles CA 90210",
+  "email": "annyeonghaseyo@seoulgarden.com",
+  "website": "www.seoulgardenbbq.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Banchan & Appetizers": [
+      {"item": "Kimchi", "price": 6, "currency": "USD"},
+      {"item": "Korean Pancake (Pajeon)", "price": 14, "currency": "USD"},
+      {"item": "Mandu (Dumplings)", "price": 12, "currency": "USD"},
+      {"item": "Pickled Vegetables", "price": 8, "currency": "USD"},
+      {"item": "Tofu Kimchi", "price": 10, "currency": "USD"}
+    ],
+    "Premium BBQ": [
+      {"item": "Galbi (Short Ribs)", "price": 32, "currency": "USD"},
+      {"item": "Bulgogi (Marinated Beef)", "price": 26, "currency": "USD"},
+      {"item": "Samgyeopsal (Pork Belly)", "price": 24, "currency": "USD"},
+      {"item": "Dakgalbi (Spicy Chicken)", "price": 22, "currency": "USD"},
+      {"item": "Wagyu Beef", "price": 45, "currency": "USD"}
+    ],
+    "Hot Pot & Stew": [
+      {"item": "Kimchi Jjigae", "price": 16, "currency": "USD"},
+      {"item": "Sundubu Jjigae (Soft Tofu)", "price": 15, "currency": "USD"},
+      {"item": "Budae Jjigae (Army Stew)", "price": 28, "currency": "USD"},
+      {"item": "Doenjang Jjigae", "price": 14, "currency": "USD"},
+      {"item": "Galbitang (Short Rib Soup)", "price": 18, "currency": "USD"}
+    ],
+    "Rice & Noodles": [
+      {"item": "Bibimbap", "price": 16, "currency": "USD"},
+      {"item": "Kimchi Fried Rice", "price": 14, "currency": "USD"},
+      {"item": "Naengmyeon (Cold Noodles)", "price": 15, "currency": "USD"},
+      {"item": "Japchae", "price": 13, "currency": "USD"},
+      {"item": "Dolsot Bibimbap", "price": 18, "currency": "USD"}
+    ],
+    "All-You-Can-Eat": [
+      {"item": "Premium AYCE (Lunch)", "price": 35, "currency": "USD"},
+      {"item": "Premium AYCE (Dinner)", "price": 45, "currency": "USD"},
+      {"item": "Standard AYCE (Lunch)", "price": 25, "currency": "USD"},
+      {"item": "Standard AYCE (Dinner)", "price": 32, "currency": "USD"},
+      {"item": "Vegetarian AYCE", "price": 22, "currency": "USD"}
+    ],
+    "Beverages": [
+      {"item": "Soju", "price": 8, "currency": "USD"},
+      {"item": "Korean Beer (Hite)", "price": 5, "currency": "USD"},
+      {"item": "Makgeolli", "price": 10, "currency": "USD"},
+      {"item": "Korean Tea", "price": 4, "currency": "USD"},
+      {"item": "Sikhye (Sweet Rice Drink)", "price": 5, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Bingsu (Shaved Ice)", "price": 12, "currency": "USD"},
+      {"item": "Hoddeok (Sweet Pancake)", "price": 8, "currency": "USD"},
+      {"item": "Korean Ice Cream", "price": 6, "currency": "USD"},
+      {"item": "Yakgwa (Honey Cookies)", "price": 7, "currency": "USD"}
+    ]
+  }
+}

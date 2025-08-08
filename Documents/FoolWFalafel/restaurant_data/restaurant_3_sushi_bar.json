@@ -1,0 +1,64 @@
+{
+  "name": "Sakura Sushi House",
+  "description": "Premium Japanese dining experience featuring the freshest sashimi, expertly crafted sushi rolls, and traditional Japanese hospitality. Our master chefs bring authentic flavors from Tokyo to your table.",
+  "phone": "(555) 234-5678",
+  "address": "456 Cherry Blossom Lane, San Francisco CA 94102",
+  "email": "info@sakurasushi.com",
+  "website": "www.sakurasushihouse.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Appetizers": [
+      {"item": "Edamame", "price": 6, "currency": "USD"},
+      {"item": "Gyoza (6 pieces)", "price": 10, "currency": "USD"},
+      {"item": "Agedashi Tofu", "price": 8, "currency": "USD"},
+      {"item": "Takoyaki (6 pieces)", "price": 12, "currency": "USD"},
+      {"item": "Miso Soup", "price": 4, "currency": "USD"}
+    ],
+    "Sashimi": [
+      {"item": "Salmon Sashimi (5 pieces)", "price": 15, "currency": "USD"},
+      {"item": "Tuna Sashimi (5 pieces)", "price": 18, "currency": "USD"},
+      {"item": "Yellowtail Sashimi (5 pieces)", "price": 16, "currency": "USD"},
+      {"item": "Mixed Sashimi Platter", "price": 28, "currency": "USD"},
+      {"item": "Chef's Special Sashimi", "price": 35, "currency": "USD"}
+    ],
+    "Sushi Rolls": [
+      {"item": "California Roll", "price": 9, "currency": "USD"},
+      {"item": "Spicy Tuna Roll", "price": 12, "currency": "USD"},
+      {"item": "Dragon Roll", "price": 16, "currency": "USD"},
+      {"item": "Rainbow Roll", "price": 18, "currency": "USD"},
+      {"item": "Philadelphia Roll", "price": 11, "currency": "USD"},
+      {"item": "Sakura Special Roll", "price": 20, "currency": "USD"}
+    ],
+    "Hot Dishes": [
+      {"item": "Chicken Teriyaki", "price": 19, "currency": "USD"},
+      {"item": "Beef Sukiyaki", "price": 24, "currency": "USD"},
+      {"item": "Tempura Udon", "price": 16, "currency": "USD"},
+      {"item": "Chirashi Bowl", "price": 22, "currency": "USD"},
+      {"item": "Bento Box", "price": 18, "currency": "USD"}
+    ],
+    "Beverages": [
+      {"item": "Sake (Hot)", "price": 8, "currency": "USD"},
+      {"item": "Sake (Cold Premium)", "price": 12, "currency": "USD"},
+      {"item": "Japanese Beer", "price": 6, "currency": "USD"},
+      {"item": "Green Tea", "price": 3, "currency": "USD"},
+      {"item": "Ramune", "price": 4, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Mochi Ice Cream (3 pieces)", "price": 8, "currency": "USD"},
+      {"item": "Tempura Ice Cream", "price": 9, "currency": "USD"},
+      {"item": "Dorayaki", "price": 6, "currency": "USD"},
+      {"item": "Matcha Cheesecake", "price": 7, "currency": "USD"}
+    ]
+  }
+}

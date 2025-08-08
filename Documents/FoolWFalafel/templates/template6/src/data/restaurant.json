@@ -1,0 +1,206 @@
+{
+  "name": "Bella Vista",
+  "description": "Experience authentic Italian cuisine in an elegant atmosphere. Our chefs use traditional recipes passed down through generations, combined with the finest locally sourced ingredients to create unforgettable dining experiences.",
+  "phone": "(555) 123-4567",
+  "address": "123 Main Street, Downtown, NY 10001",
+  "email": "info@bellavista.com",
+  "website": "www.bellavista.com",
+  "heroImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  "aboutImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  "menu": [
+    {
+      "id": "1",
+      "name": "Margherita Pizza",
+      "description": "Fresh mozzarella, tomato sauce, basil, and extra virgin olive oil",
+      "price": 18,
+      "category": "Pizza"
+    },
+    {
+      "id": "2",
+      "name": "Pepperoni Pizza",
+      "description": "Classic pepperoni with mozzarella cheese and tomato sauce",
+      "price": 20,
+      "category": "Pizza"
+    },
+    {
+      "id": "3",
+      "name": "Quattro Stagioni",
+      "description": "Four seasons pizza with artichokes, mushrooms, ham, and olives",
+      "price": 24,
+      "category": "Pizza"
+    },
+    {
+      "id": "4",
+      "name": "Spaghetti Carbonara",
+      "description": "Traditional Roman pasta with pancetta, egg, pecorino cheese, and black pepper",
+      "price": 22,
+      "category": "Pasta"
+    },
+    {
+      "id": "5",
+      "name": "Linguine alle Vongole",
+      "description": "Fresh linguine with clams, white wine, garlic, and parsley",
+      "price": 26,
+      "category": "Pasta"
+    },
+    {
+      "id": "6",
+      "name": "Penne Arrabbiata",
+      "description": "Spicy penne pasta with tomatoes, garlic, and red chilies",
+      "price": 19,
+      "category": "Pasta"
+    },
+    {
+      "id": "7",
+      "name": "Fettuccine Alfredo",
+      "description": "Rich and creamy fettuccine with parmesan cheese and butter",
+      "price": 21,
+      "category": "Pasta"
+    },
+    {
+      "id": "8",
+      "name": "Osso Buco",
+      "description": "Braised veal shanks with vegetables, white wine, and broth",
+      "price": 32,
+      "category": "Main Course"
+    },
+    {
+      "id": "9",
+      "name": "Grilled Salmon",
+      "description": "Fresh Atlantic salmon with lemon herb butter and seasonal vegetables",
+      "price": 28,
+      "category": "Main Course"
+    },
+    {
+      "id": "10",
+      "name": "Chicken Parmigiana",
+      "description": "Breaded chicken breast with marinara sauce and melted mozzarella",
+      "price": 25,
+      "category": "Main Course"
+    },
+    {
+      "id": "11",
+      "name": "Beef Tenderloin",
+      "description": "8oz prime cut with roasted potatoes and red wine reduction",
+      "price": 38,
+      "category": "Main Course"
+    },
+    {
+      "id": "12",
+      "name": "Bruschetta",
+      "description": "Grilled bread topped with fresh tomatoes, garlic, and basil",
+      "price": 12,
+      "category": "Appetizer"
+    },
+    {
+      "id": "13",
+      "name": "Antipasto Platter",
+      "description": "Selection of cured meats, cheeses, olives, and roasted vegetables",
+      "price": 18,
+      "category": "Appetizer"
+    },
+    {
+      "id": "14",
+      "name": "Stuffed Mushrooms",
+      "description": "Button mushrooms filled with herbs, breadcrumbs, and parmesan",
+      "price": 14,
+      "category": "Appetizer"
+    },
+    {
+      "id": "15",
+      "name": "Calamari Fritti",
+      "description": "Crispy fried squid rings with marinara sauce and lemon",
+      "price": 16,
+      "category": "Appetizer"
+    },
+    {
+      "id": "16",
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone",
+      "price": 14,
+      "category": "Dessert"
+    },
+    {
+      "id": "17",
+      "name": "Panna Cotta",
+      "description": "Silky vanilla custard with berry compote",
+      "price": 12,
+      "category": "Dessert"
+    },
+    {
+      "id": "18",
+      "name": "Gelato Selection",
+      "description": "Three scoops of artisanal gelato: vanilla, chocolate, and pistachio",
+      "price": 10,
+      "category": "Dessert"
+    },
+    {
+      "id": "19",
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with parmesan cheese, croutons, and caesar dressing",
+      "price": 16,
+      "category": "Salad"
+    },
+    {
+      "id": "20",
+      "name": "Arugula Salad",
+      "description": "Fresh arugula with cherry tomatoes, pine nuts, and balsamic vinaigrette",
+      "price": 14,
+      "category": "Salad"
+    },
+    {
+      "id": "21",
+      "name": "Caprese Salad",
+      "description": "Fresh mozzarella, tomatoes, and basil with extra virgin olive oil",
+      "price": 15,
+      "category": "Salad"
+    },
+    {
+      "id": "22",
+      "name": "Chianti Classico",
+      "description": "Full-bodied red wine from Tuscany - Glass/Bottle",
+      "price": 12,
+      "category": "Wine"
+    },
+    {
+      "id": "23",
+      "name": "Pinot Grigio",
+      "description": "Crisp white wine from Veneto - Glass/Bottle",
+      "price": 10,
+      "category": "Wine"
+    },
+    {
+      "id": "24",
+      "name": "Prosecco",
+      "description": "Sparkling wine from Veneto - Glass/Bottle",
+      "price": 11,
+      "category": "Wine"
+    },
+    {
+      "id": "25",
+      "name": "Espresso",
+      "description": "Rich Italian coffee served in traditional style",
+      "price": 4,
+      "category": "Coffee"
+    },
+    {
+      "id": "26",
+      "name": "Cappuccino",
+      "description": "Espresso with steamed milk and foam",
+      "price": 5,
+      "category": "Coffee"
+    },
+    {
+      "id": "27",
+      "name": "Affogato",
+      "description": "Vanilla gelato 'drowned' in hot espresso",
+      "price": 8,
+      "category": "Coffee"
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ]
+}

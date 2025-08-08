@@ -1,0 +1,63 @@
+{
+  "name": "El Corazón Cantina",
+  "description": "Vibrant Mexican flavors and festive atmosphere! Traditional recipes passed down through generations, fresh ingredients, and handcrafted margaritas make every visit a celebration of authentic Mexican culture.",
+  "phone": "(555) 456-7890",
+  "address": "892 Fiesta Boulevard, Austin TX 78704",
+  "email": "hola@elcorazoncantina.com",
+  "website": "www.elcorazoncantina.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2387&q=80"
+  ],
+  "menu_categories": {
+    "Appetizers": [
+      {"item": "Guacamole & Chips", "price": 12, "currency": "USD"},
+      {"item": "Queso Fundido", "price": 14, "currency": "USD"},
+      {"item": "Nachos Supreme", "price": 16, "currency": "USD"},
+      {"item": "Jalapeño Poppers", "price": 10, "currency": "USD"},
+      {"item": "Elote Street Corn", "price": 8, "currency": "USD"}
+    ],
+    "Tacos": [
+      {"item": "Carnitas Tacos (3)", "price": 13, "currency": "USD"},
+      {"item": "Carne Asada Tacos (3)", "price": 15, "currency": "USD"},
+      {"item": "Fish Tacos (3)", "price": 14, "currency": "USD"},
+      {"item": "Chicken Tinga Tacos (3)", "price": 12, "currency": "USD"},
+      {"item": "Vegetarian Tacos (3)", "price": 11, "currency": "USD"}
+    ],
+    "Burritos": [
+      {"item": "California Burrito", "price": 16, "currency": "USD"},
+      {"item": "Bean & Rice Burrito", "price": 12, "currency": "USD"},
+      {"item": "Chicken Fajita Burrito", "price": 15, "currency": "USD"},
+      {"item": "Steak Burrito", "price": 17, "currency": "USD"},
+      {"item": "Breakfast Burrito", "price": 13, "currency": "USD"}
+    ],
+    "Entrees": [
+      {"item": "Chicken Enchiladas", "price": 18, "currency": "USD"},
+      {"item": "Beef Fajitas", "price": 22, "currency": "USD"},
+      {"item": "Chile Rellenos", "price": 19, "currency": "USD"},
+      {"item": "Mole Poblano", "price": 21, "currency": "USD"},
+      {"item": "Carne Asada Platter", "price": 24, "currency": "USD"}
+    ],
+    "Drinks": [
+      {"item": "Margarita (House)", "price": 9, "currency": "USD"},
+      {"item": "Margarita (Premium)", "price": 12, "currency": "USD"},
+      {"item": "Corona", "price": 5, "currency": "USD"},
+      {"item": "Horchata", "price": 4, "currency": "USD"},
+      {"item": "Agua Fresca", "price": 3, "currency": "USD"}
+    ],
+    "Desserts": [
+      {"item": "Churros", "price": 7, "currency": "USD"},
+      {"item": "Flan", "price": 6, "currency": "USD"},
+      {"item": "Tres Leches Cake", "price": 8, "currency": "USD"},
+      {"item": "Sopapillas", "price": 6, "currency": "USD"}
+    ]
+  }
+}

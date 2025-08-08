@@ -1,0 +1,623 @@
+{
+  "name": "Fool W Falafel",
+  "description": "Authentic Middle Eastern street food with a modern twist! Fresh falafels, crispy fool, and bold flavors served fast. Every bite is packed with tradition and made to satisfy your cravings instantly.",
+  "phone": "(555) 123-4567",
+  "address": "616 Lumination Ave, Columbus OH 43240",
+  "email": "info@foolwfalafel.com",
+  "website": "www.foolwfalafel.com",
+  "heroImage": "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+  "heroImages": [
+    "https://images.pexels.com/photos/5908050/pexels-photo-5908050.jpeg",
+    "https://plus.unsplash.com/premium_photo-1683619761464-6b7c9a2716a8?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+  ],
+  "aboutImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+  "fullScreenImages": [
+    "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2081&q=80",
+    "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+  ],
+  "menu_categories": {
+    "Shawarma": [
+     {
+      "item": "Chicken Shawarma Sandwich",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Shawarma Sandwich",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Shawarma Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Shawarma Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Shawarma Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Shawarma Small Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Shawarma Medium Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Shawarma Large Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Shawarma Small Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Shawarma Medium Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Shawarma Large Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Shawarma Plate",
+      "price": 12,
+      "currency": "SAR"
+     }
+    ],
+    "Pastries": [
+     {
+      "item": "Cheese Pastry",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Thyme Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Labaneh Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Spinach Pastry",
+      "price": 7,
+      "currency": "SAR"
+     },
+     {
+      "item": "Labaneh with Thyme Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Labaneh with Honey Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Cheese with Thyme Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Cheese with Honey Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Labaneh with Olive Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Cheese with Olive Pastry",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Liquid Cheese Pie",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Liquid Cheese Pie with Honey",
+      "price": 12,
+      "currency": "SAR"
+     }
+    ],
+    "Grilled": [
+     {
+      "item": "Awsal",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Kebab",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Shish Tawook",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mix Grilled",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Wings",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Broasted",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Broasted Chicken Wings",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "1 Broasted Chicken",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Hot Broasted",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Whole Grilled Chicken",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Half Grilled Chicken",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Kebab Chicken",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mix Grilled (1kg)",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Shish Tawook (1kg)",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Kebab (1kg)",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Awsal Meat (1kg)",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Kebab (1kg)",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Kebab Meat (1kg)",
+      "price": 12,
+      "currency": "SAR"
+     }
+    ],
+    "Appetizers": [
+     {
+      "item": "Homos",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Moutabal",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Baba Gannoug",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Taboulli",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Salad",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Appetizer S",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Appetizer M",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Appetizer B",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Grape Leaves Small",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Grape Leaves Big",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Potatoes Small",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Potatoes Large",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Hummus Plate",
+      "price": 10,
+      "currency": "SAR"
+     },
+     {
+      "item": "Tabbouleh Plate",
+      "price": 10,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mutarbal Plate",
+      "price": 10,
+      "currency": "SAR"
+     },
+     {
+      "item": "Baba Ghangug Plate",
+      "price": 10,
+      "currency": "SAR"
+     },
+     {
+      "item": "Green Salad Plate",
+      "price": 9,
+      "currency": "SAR"
+     },
+     {
+      "item": "Grape Leaves Small Plate",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Appetizer Small",
+      "price": 25,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Appetizer Medium",
+      "price": 30,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mixed Appetizer Large",
+      "price": 37,
+      "currency": "SAR"
+     },
+     {
+      "item": "French Fries Small",
+      "price": 10,
+      "currency": "SAR"
+     },
+     {
+      "item": "French Fries Large",
+      "price": 15,
+      "currency": "SAR"
+     }
+    ],
+    "Beverages": [
+     {
+      "item": "Orange Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Cocktail Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Lemon Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Carrot Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mango Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Pomegranate Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Layers Juice (Strawberry + Mango - Banana + Guava)",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Kiwi Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Apple Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Strawberry Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Melon Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Banana Milk Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Guava Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Avocado Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Grapefruit Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Lemon with Mint Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Blueberry Juice",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Cola Zero",
+      "price": 6,
+      "currency": "SAR"
+     },
+     {
+      "item": "Sprite",
+      "price": 6,
+      "currency": "SAR"
+     },
+     {
+      "item": "Coca Cola",
+      "price": 6,
+      "currency": "SAR"
+     },
+     {
+      "item": "Fanta Orange",
+      "price": 6,
+      "currency": "SAR"
+     },
+     {
+      "item": "Water",
+      "price": 2,
+      "currency": "SAR"
+     },
+     {
+      "item": "1.5 Litre Water",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "5 Litre Water",
+      "price": 38,
+      "currency": "SAR"
+     },
+     {
+      "item": "Small Juices (Various)",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Large Juices (Various)",
+      "price": 12,
+      "currency": "SAR"
+     }
+    ],
+    "Breakfast": [
+     {
+      "item": "Mixed Sandwich",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Egg Sandwich",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Fried Egg Plate",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Sandwich",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Fried Falafel Sandwich",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Plate Large",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Plate Large with Eggs",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "6 Falafel Pieces Large",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Shakshouka",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Liver",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Mashed Fava Beans",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Burger",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Burger",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Chicken Burger + Fries + Cola",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Meat Burger + Fries + Cola",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Toasted Cheese",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Toasted Sausage",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Fried Eggs",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Boiled Eggs",
+      "price": 12,
+      "currency": "SAR"
+     },
+     {
+      "item": "Cheese Plate with Extra Cheese",
+      "price": 13,
+      "currency": "SAR"
+     },
+     {
+      "item": "Hummus with Eggs",
+      "price": 9,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Sandwich",
+      "price": 8,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Plate Large",
+      "price": 28,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Plate Small",
+      "price": 17,
+      "currency": "SAR"
+     },
+     {
+      "item": "Falafel Plate Large with Eggs",
+      "price": 30,
+      "currency": "SAR"
+     },
+     {
+      "item": "6 Falafel Pieces",
+      "price": 5,
+      "currency": "SAR"
+     }
+    ]
+   }
+}
